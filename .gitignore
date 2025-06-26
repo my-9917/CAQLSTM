@@ -1,0 +1,56 @@
+# 忽略结果目录
+results/
+
+# 忽略数据目录
+data/
+
+# 忽略模型检查点目录
+models/
+
+# 忽略安装配置文件
+setup.py
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 模型文件
+*.pth
+*.pt
+*.ckpt
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.temp 

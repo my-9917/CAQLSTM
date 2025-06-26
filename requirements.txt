@@ -1,0 +1,9 @@
+# 文件名: requirements.txt
+torch
+torchquantum
+numpy
+matplotlib
+tqdm
+scipy
+wfdb
+nolds
