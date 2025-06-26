@@ -87,6 +87,12 @@ def plot_error_distribution(model, data_loader, device, save_path):
             errors.append(error)
             
     errors = np.concatenate(errors).flatten()
+
+    finite_errors = errors[np.isfinite(errors)]
+    
+    if len(finite_errors) == 0:
+        print("⚠️ 警告: 所有预测误差均为非有限值，无法生成误差分布图。")
+        return
     
     plt.figure(figsize=(10, 6))
     plt.hist(errors, bins=50, density=True, alpha=0.7, color='g', label='Error Distribution')
