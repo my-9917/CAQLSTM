@@ -44,7 +44,7 @@ else:
     print("🏆 已启用完整训练模式")
     MODEL_TYPE = "qlstm"
     MAX_SEQUENCES = 20000
-    EPOCHS = 80
+    EPOCHS = 50
     BATCH_SIZE = 32
     QLSTM_CONFIG = {
         "hidden_dim": 32,
